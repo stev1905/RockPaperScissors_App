@@ -1,6 +1,6 @@
 let rockUrl = 'images/rock.jpg';
 let paperUrl = 'images/paper.jpg';
-let scissorUrl = 'images/scissors.jpg';
+let scissorsUrl = 'images/scissors.jpg';
 
 document.addEventListener('DOMContentLoaded', function() {
     let rockImage = new Image();
@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     rockImage.src = rockUrl;
     paperImage.src = paperUrl;
-    scissorsImage.src = scissorUrl;
+    scissorsImage.src = scissorsUrl;
 
     document.getElementById('rock').appendChild(rockImage);
     document.getElementById('paper').appendChild(paperImage);
@@ -52,28 +52,29 @@ const getWinner = (computerPick, userPick) => {
 
 const chooseRock = () => {
     let computerPick = getComputerPick();
-    getWinner(computerPick, 'rock');
+    let winner = getWinner(computerPick, 'rock');
 
-    let rockComputerUrl = `images/${computerPick}.jpg`;
-
-    let rockUserImage = new Image();
-    let rockComputerImage = new Image();
-
-    rockUserImage.src = rockUrl;
-    rockComputerImage.src = rockComputerUrl;
-
-    document.getElementById('user-pick').appendChild(rockUserImage);
-    document.getElementById('computer-pick').appendChild(rockComputerImage);
+    document.getElementById('user-pick-img').src = rockUrl;
+    document.getElementById('computer-pick-img').src = `images/${computerPick}.jpg`;
+    document.getElementsByClassName('results')[0].innerText  = `${winner}`;
 }
 
 const choosePaper = () => {
     let computerPick = getComputerPick();
-    getWinner(computerPick, 'paper');
+    let winner = getWinner(computerPick, 'paper');
+
+    document.getElementById('user-pick-img').src = paperUrl;
+    document.getElementById('computer-pick-img').src = `images/${computerPick}.jpg`;
+    document.getElementsByClassName('results')[0].innerText  = `${winner}`;
 }
 
 const chooseScissors = () => {
     let computerPick = getComputerPick();
-    getWinner(computerPick, 'scissors');
+    let winner = getWinner(computerPick, 'scissors');
+    
+    document.getElementById('user-pick-img').src = scissorsUrl;
+    document.getElementById('computer-pick-img').src = `images/${computerPick}.jpg`;
+    document.getElementsByClassName('results')[0].innerText  = `${winner}`;
 }
 
 //Lister for users pick via click

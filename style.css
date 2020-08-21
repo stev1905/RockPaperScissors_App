@@ -45,13 +45,23 @@ img {
 }
 
 .results {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border: dotted 1px black;
-    width: 200px;
+    width: 400px;
     height: 100px;
+    font-size: 30px;
+    color: darkred;
     align-self: flex-end;
 }
 
+
+
 #user-pick, #computer-pick {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border: dotted 1px black;
     width: 320px;
     height: 470px;
@@ -71,4 +81,9 @@ img {
 #rock:hover, #paper:hover, #scissors:hover {
     background-color: wheat;
     cursor: pointer;
+}
+
+#computer-pick-img, #user-pick-img {
+    height: 400px;
+    width: 300px;
 }
