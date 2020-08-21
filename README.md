@@ -1,5 +1,5 @@
 <h1>Vanilla Javascript Rock, Paper & Scissors Game</h1>
-View App <a href="">here</a>
+View App <a href="https://stev1905.github.io/RockPaperScissors_App/">here</a>
 <br>
 
 <i>Rock, Paper & Scissors game is written in Vanillas Javascript, HTML & CSS</i>
