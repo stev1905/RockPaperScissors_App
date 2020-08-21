@@ -2,7 +2,7 @@
 View App <a href="">here</a>
 <br>
 
-<i>Rock, Paper& Scissors game is written in Vanillas Javascript, HTML & CSS</i>
+<i>Rock, Paper & Scissors game is written in Vanillas Javascript, HTML & CSS</i>
 
 ![RPS app image](https://user-images.githubusercontent.com/13443788/90901650-3c561f80-e399-11ea-836b-8564d0cade6a.JPG)
 
