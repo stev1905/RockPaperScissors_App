@@ -11,5 +11,5 @@ View App <a href="https://stev1905.github.io/RockPaperScissors_App/">here</a>
 
 <h1>Author</h1>
 <ul>
-  <li><b>Christian Stevens</b> - Full-Stack Developer - <a href="https://chris-thedeveloper.com/">website</a> | <a href="https://www.linkedin.com/in/christian-stevens-34367110b/">LinkedIn</a>
+  <li><b>Christian Stevens</b> - Full-Stack Developer - <a href="https://chris-thedeveloper.com/">Website</a> | <a href="https://www.linkedin.com/in/christian-stevens-34367110b/">LinkedIn</a>
 </u>
