@@ -7,6 +7,7 @@
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
     <link href="https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Mrs+Sheppards&display=swap" rel="stylesheet">
 </head>
 <body>
     <H1>Rock, Paper & Scissors Game</H1>
@@ -21,8 +22,14 @@
             <div class ="choice">Choose Scissors?</div>
         </div>
     </div>
-    <div class="battle-container"></div>
-    <div class="result-container"></div>
+    <div class="battle-container">
+        <div id="user-pick"><img src="images/questionmark.jpg" alt="user pick"></div>
+        <div class="middle-container">
+            <div class ="versus">v.s</div>
+            <div class="results"></div>
+        </div>
+        <div id="computer-pick"><img src="images/questionmark.jpg" alt="results"></div>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>

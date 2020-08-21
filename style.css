@@ -1,10 +1,11 @@
 body{
     background: rgb(166,166,173);
     background: linear-gradient(297deg, rgba(166,166,173,1) 0%, rgba(105,187,147,1) 27%, rgba(4,10,11,1) 100%);
-    font-family: 'Bungee Shade', cursive;
+    font-family: 'Mrs Sheppards', cursive;
 }
 
 h1 {
+    font-family: 'Bungee Shade', cursive;
     display: flex;
     justify-content: center;
     font-size: 44px;
@@ -14,47 +15,60 @@ h1 {
     padding-bottom: 20px;
 }
 
+img {
+    width: 100px;
+    align-self: center;  
+}
+
 .header-container {
     display: flex;
     justify-content: space-between;
 }
 
-img {
-    width: 30%;
-}
-
-#rock {
-    width: 30%;
-    border: dotted 1px black;
+.battle-container {
     display: flex;
-    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
 }
 
-#rock:hover {
-    background-color: wheat;
-    cursor: pointer;
+.choice {
+    align-self: center;
 }
 
-#paper {
-    width: 30%;
-    border: dotted 1px black;
+.versus {
     display: flex;
-    flex-direction: column-reverse;
-}
-
-#paper:hover {
-    background-color: wheat;
-    cursor: pointer;
-}
-
-#scissors {
-    width: 30%;
+    justify-content: center;
     border: dotted 1px black;
-    display: flex;
-    flex-direction: column-reverse;
+    align-self: center;
+    font-size: 90px;
+    color: darkred;
 }
 
-#scissors:hover {
+.results {
+    border: dotted 1px black;
+    width: 200px;
+    height: 100px;
+    align-self: flex-end;
+}
+
+#user-pick, #computer-pick {
+    border: dotted 1px black;
+    width: 320px;
+    height: 470px;
+}
+
+#rock, #paper, #scissors {
+    display: flex;
+    border-radius: 50%;
+    justify-content: center;
+    flex-direction: column-reverse;
+    border: solid 2px black;
+    width: 250px;
+    height: 250px;
+    font-size: 36px;
+}
+
+#rock:hover, #paper:hover, #scissors:hover {
     background-color: wheat;
     cursor: pointer;
 }
