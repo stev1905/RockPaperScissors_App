@@ -14,6 +14,8 @@ document.addEventListener('DOMContentLoaded', function() {
     document.getElementById('rock').appendChild(rockImage);
     document.getElementById('paper').appendChild(paperImage);
     document.getElementById('scissors').appendChild(scissorsImage);
+    document.getElementById('computer-pick-img').style.visibility ='hidden'
+    document.getElementById('user-pick-img').style.visibility ='hidden'
 });
 
 //generate random value for computer
@@ -54,6 +56,9 @@ const chooseRock = () => {
     let computerPick = getComputerPick();
     let winner = getWinner(computerPick, 'rock');
 
+    document.getElementById('computer-pick-img').style.visibility ='visible'
+    document.getElementById('user-pick-img').style.visibility ='visible'
+
     document.getElementById('user-pick-img').src = rockUrl;
     document.getElementById('computer-pick-img').src = `images/${computerPick}.jpg`;
     document.getElementsByClassName('results')[0].innerText  = `${winner}`;
@@ -63,6 +68,9 @@ const choosePaper = () => {
     let computerPick = getComputerPick();
     let winner = getWinner(computerPick, 'paper');
 
+    document.getElementById('computer-pick-img').style.visibility ='visible'
+    document.getElementById('user-pick-img').style.visibility ='visible'
+
     document.getElementById('user-pick-img').src = paperUrl;
     document.getElementById('computer-pick-img').src = `images/${computerPick}.jpg`;
     document.getElementsByClassName('results')[0].innerText  = `${winner}`;
@@ -71,7 +79,10 @@ const choosePaper = () => {
 const chooseScissors = () => {
     let computerPick = getComputerPick();
     let winner = getWinner(computerPick, 'scissors');
-    
+
+    document.getElementById('computer-pick-img').style.visibility ='visible'
+    document.getElementById('user-pick-img').style.visibility ='visible'
+
     document.getElementById('user-pick-img').src = scissorsUrl;
     document.getElementById('computer-pick-img').src = `images/${computerPick}.jpg`;
     document.getElementsByClassName('results')[0].innerText  = `${winner}`;
